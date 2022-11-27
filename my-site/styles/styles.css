@@ -26,3 +26,7 @@ header {
   margin-left: 100px;
   margin-right: 100px;
 }
+#group-grid {
+  column-count: 5;
+  grid-row: 2;
+}
