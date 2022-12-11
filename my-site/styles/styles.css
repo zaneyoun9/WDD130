@@ -20,6 +20,7 @@ header {
 .question {
   text-align: center;
   color: #5465ff;
+  padding-bottom: 10px;
 }
 .answer {
   text-align: center;
@@ -43,7 +44,8 @@ header {
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .accordion:hover {
+.active,
+.accordion:hover {
   background-color: #ccc;
 }
 
@@ -53,4 +55,10 @@ header {
   background-color: white;
   display: none;
   overflow: hidden;
+}
+.title {
+  font-size: 100px;
+  color: #788bff;
+  text-align: center;
+  margin-bottom: 50px;
 }
