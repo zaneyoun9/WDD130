@@ -12,28 +12,62 @@
       <img class="logo" src="./images/blade-icon.png" alt="Blade Rate Logo" />
     </header>
     <img class="chart" src="./images/table.png" alt="table" />
+    <h1 class="answer">
+      If you would like to know what group your save file is in. There is no
+      definitive way to tell however you most likely got these rare blades
+      already as they have the highest drop rates in their respective groups. To
+      see which blades correspond to which group see the groups below.
+    </h1>
     <div>
       <button class="accordion">Group 1</button>
       <div class="panel">
-        <p>Text for group 1 to be added later</p>
+        <p class="answer">
+          Adenine, Electra, Floren, Perun, Ursula. This Group also has the
+          highest chance for Vale.
+        </p>
       </div>
 
       <button class="accordion">Group 2</button>
       <div class="panel">
-        <p>Text for group 2 to be added later</p>
+        <p class="answer">
+          Azami, Boreas, Electra, Floren, Kora. This group also has the highest
+          chance for Zenobia.
+        </p>
       </div>
 
       <button class="accordion">Group 3</button>
       <div class="panel">
-        <p>Text for group 3 to be added later</p>
+        <p class="answer">Agate, Boreas, Finch, Kora, Nim.</p>
       </div>
       <button class="accordion">Group 4</button>
       <div class="panel">
-        <p>Text for group 4 to be added later</p>
+        <p class="answer">
+          Adenine, Dagas, Godfrey, Gorg, Perun, Ursula. This group also has a
+          high chance for Agate and Dahlia.
+        </p>
       </div>
       <button class="accordion">Group 5</button>
       <div class="panel">
-        <p>Text for group 5 to be added later</p>
+        <p class="answer">
+          Azami, Finch, Godfrey, Kora, Percival. This group has the highest
+          chance for Newt.
+        </p>
+        <script>
+          var acc = document.getElementsByClassName("accordion");
+          var i;
+
+          for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+              this.classList.toggle("active");
+              var panel = this.nextElementSibling;
+              if (panel.style.display === "block") {
+                panel.style.display = "none";
+              } else {
+                panel.style.display = "block";
+              }
+            });
+          }
+        </script>
       </div>
     </div>
     <footer>
